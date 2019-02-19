@@ -3,7 +3,7 @@ package maputil_test
 import (
 	"testing"
 
-	"github.com/fastbill/tiny-helpers/maputil"
+	"github.com/fastbill/go-tiny-helpers/maputil"
 	"github.com/stretchr/testify/assert"
 )
 

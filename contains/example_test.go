@@ -3,7 +3,7 @@ package contains_test
 import (
 	"fmt"
 
-	"github.com/fastbill/tiny-helpers/contains"
+	"github.com/fastbill/go-tiny-helpers/contains"
 )
 
 func ExampleString() {

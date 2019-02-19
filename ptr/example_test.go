@@ -3,7 +3,7 @@ package ptr_test
 import (
 	"fmt"
 
-	"github.com/fastbill/tiny-helpers/ptr"
+	"github.com/fastbill/go-tiny-helpers/ptr"
 )
 
 func Example() {
