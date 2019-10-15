@@ -3,7 +3,7 @@ package maputil_test
 import (
 	"fmt"
 
-	"github.com/fastbill/go-tiny-helpers/maputil"
+	"github.com/fastbill/go-tiny-helpers/v2/maputil"
 )
 
 func ExampleKeys() {
