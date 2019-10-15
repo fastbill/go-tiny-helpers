@@ -3,7 +3,7 @@ package ptr_test
 import (
 	"testing"
 
-	"github.com/fastbill/go-tiny-helpers/ptr"
+	"github.com/fastbill/go-tiny-helpers/v2/ptr"
 	"github.com/stretchr/testify/assert"
 )
 
