@@ -27,3 +27,8 @@ func Uint64(v uint64) *uint64 {
 func Float64(v float64) *float64 {
 	return &v
 }
+
+// Bool returns a pointer to a given bool value.
+func Bool(v bool) *bool {
+	return &v
+}
