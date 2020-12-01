@@ -31,3 +31,8 @@ func TestFloat64(t *testing.T) {
 	result := ptr.Float64(123.456)
 	assert.Equal(t, float64(123.456), *result)
 }
+
+func TestBool(t *testing.T) {
+	result := ptr.Bool(true)
+	assert.True(t, *result)
+}
