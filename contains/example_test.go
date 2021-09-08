@@ -9,9 +9,23 @@ import (
 func ExampleString() {
 	input := []string{"a", "b", "c"}
 	fmt.Println(contains.String(input, "b"))
-	fmt.Println(contains.String(input, "z"))
+	fmt.Println(contains.String(input, "C"))
 
 	// Output:
+	// true
+	// false
+}
+
+func ExampleStringWithEqualFold() {
+	input := []string{"APPLE", "banana", "CasheW"}
+	fmt.Println(contains.StringWithEqualFold(input, "apple"))
+	fmt.Println(contains.StringWithEqualFold(input, "BAnana"))
+	fmt.Println(contains.StringWithEqualFold(input, "cashew"))
+	fmt.Println(contains.StringWithEqualFold(input, "app"))
+
+	// Output:
+	// true
+	// true
 	// true
 	// false
 }
