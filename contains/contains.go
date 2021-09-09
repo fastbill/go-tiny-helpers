@@ -1,10 +1,25 @@
 // Package contains checks if a value is included in a slice of values.
 package contains
 
+import "strings"
+
 // String checks if a slice of strings contains a certain string value.
+// The check is case sensitive, "Go" and "go" will not match.
 func String(list []string, value string) bool {
 	for _, item := range list {
 		if item == value {
+			return true
+		}
+	}
+	return false
+}
+
+// StringCaseInsensitive checks if a slice of strings contains a certain string value.
+// The check is case insensitive, "Go" and "go" will be counted as a match.
+// See https://pkg.go.dev/strings#EqualFold for details.
+func StringCaseInsensitive(list []string, value string) bool {
+	for _, item := range list {
+		if strings.EqualFold(item, value) {
 			return true
 		}
 	}
