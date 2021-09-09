@@ -14,10 +14,10 @@ func String(list []string, value string) bool {
 	return false
 }
 
-// StringWithEqualFold checks if a slice of strings contains a certain string value.
+// StringCaseInsensitive checks if a slice of strings contains a certain string value.
 // The check is case insensitive, "Go" and "go" will be counted as a match.
-// See https://pkg.go.dev/strings#EqualFold.
-func StringWithEqualFold(list []string, value string) bool {
+// See https://pkg.go.dev/strings#EqualFold for details.
+func StringCaseInsensitive(list []string, value string) bool {
 	for _, item := range list {
 		if strings.EqualFold(item, value) {
 			return true

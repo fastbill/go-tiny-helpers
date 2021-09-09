@@ -16,12 +16,12 @@ func ExampleString() {
 	// false
 }
 
-func ExampleStringWithEqualFold() {
+func ExampleStringCaseInsensitive() {
 	input := []string{"APPLE", "banana", "CasheW"}
-	fmt.Println(contains.StringWithEqualFold(input, "apple"))
-	fmt.Println(contains.StringWithEqualFold(input, "BAnana"))
-	fmt.Println(contains.StringWithEqualFold(input, "cashew"))
-	fmt.Println(contains.StringWithEqualFold(input, "app"))
+	fmt.Println(contains.StringCaseInsensitive(input, "apple"))
+	fmt.Println(contains.StringCaseInsensitive(input, "BAnana"))
+	fmt.Println(contains.StringCaseInsensitive(input, "cashew"))
+	fmt.Println(contains.StringCaseInsensitive(input, "app"))
 
 	// Output:
 	// true
