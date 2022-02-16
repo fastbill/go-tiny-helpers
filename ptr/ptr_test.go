@@ -2,6 +2,7 @@ package ptr_test
 
 import (
 	"testing"
+	"time"
 
 	"github.com/fastbill/go-tiny-helpers/v2/ptr"
 	"github.com/stretchr/testify/assert"
@@ -35,4 +36,10 @@ func TestFloat64(t *testing.T) {
 func TestBool(t *testing.T) {
 	result := ptr.Bool(true)
 	assert.True(t, *result)
+}
+
+func TestTime(t *testing.T) {
+	now := time.Now()
+	result := ptr.Time(now)
+	assert.Equal(t, now, *result)
 }

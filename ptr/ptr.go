@@ -3,6 +3,8 @@
 // To fill these structs with dummy values for tests you need to create pointers to values with primitive types (see example).
 package ptr
 
+import "time"
+
 // String returns a pointer to the given string value.
 func String(v string) *string {
 	return &v
@@ -30,5 +32,10 @@ func Float64(v float64) *float64 {
 
 // Bool returns a pointer to a given bool value.
 func Bool(v bool) *bool {
+	return &v
+}
+
+// Time returns a pointer to a given time.Time value.
+func Time(v time.Time) *time.Time {
 	return &v
 }
