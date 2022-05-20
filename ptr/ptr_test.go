@@ -4,8 +4,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/fastbill/go-tiny-helpers/v2/ptr"
 	"github.com/stretchr/testify/assert"
+
+	"github.com/fastbill/go-tiny-helpers/v2/ptr"
 )
 
 func TestString(t *testing.T) {
