@@ -3,8 +3,9 @@ package maputil_test
 import (
 	"testing"
 
-	"github.com/fastbill/go-tiny-helpers/v2/maputil"
 	"github.com/stretchr/testify/assert"
+
+	"github.com/fastbill/go-tiny-helpers/v2/maputil"
 )
 
 func TestKeys(t *testing.T) {
